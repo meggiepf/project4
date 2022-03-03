@@ -35,6 +35,13 @@ Base.prepare(engine, reflect=True)
 # Load ML model
 model = pickle.load(open('model.pkl', 'rb')) 
 
+# Load initial data to sql
+data = pd.read_csv("clean_loan.csv")
+try:
+    data.to_sql(name='initial_loan_data', con=engine, if_exists='fail', index=False)
+except ValueError:
+    pass
+
 # Create application
 app = Flask(__name__)
 
