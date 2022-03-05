@@ -37,6 +37,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 # Load initial data to sql
 data = pd.read_csv("clean_loan.csv")
+data["GRADE"].replace({"A":0, "B":1, "C":2, "D":3, "E":4, "F":5, "G":6 },inplace=True)
 try:
     data.to_sql(name='initial_loan_data', con=engine, if_exists='fail', index=False)
 except ValueError:
