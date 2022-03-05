@@ -1,12 +1,12 @@
 def create_classes(db):
-    class Pet(db.Model):
-        __tablename__ = 'pets'
+    class Grade(db.Model):
+        __tablename__ = 'loan_grades'
 
         id = db.Column(db.Integer, primary_key=True)
         name = db.Column(db.String(64))
-        lat = db.Column(db.Float)
-        lon = db.Column(db.Float)
+        loan_score = db.Column(db.Float)
+        loan_amount = db.Column(db.Float)
 
         def __repr__(self):
-            return '<Pet %r>' % (self.name)
-    return Pet
+            return 'loan_grades'
+    return Grade
