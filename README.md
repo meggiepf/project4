@@ -20,5 +20,5 @@ Python Matplotlib
 
 Utilize HTML/CSS/Bootstrap to create a webpage to display visualizations and loan prediction app
 
-Deploy app to Flask
+Deploy app to Heroku: https://lending-club-loan-app.herokuapp.com/
 
