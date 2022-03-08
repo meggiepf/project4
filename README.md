@@ -9,10 +9,15 @@
   
 # Project Outline: 
 Use Lending Club Loan Data to create decision tree predictive model
+
 Create, implement, and optimize a predictive model using:
 Python Pandas
+
 Sklearn
+
 Python Matplotlib
+
 Utilize HTML/CSS/Bootstrap to create a webpage to display visualizations and loan prediction app
+
 Deploy app to Flask
 
